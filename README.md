@@ -1,1 +1,13 @@
-# TaskMetabolism
+# Changes in task allocation are unlikely to explain metabolic scaling, despite growth tasks being more costly than maintenance tasks in harvester ants
+
+## Abstract
+
+Hypometric metabolic scaling is a phenomenon where larger organisms burn fewer calories per unit of mass than smaller organisms. The mechanisms underlying metabolic scaling remain hotly debated in whole-bodied organisms, as it is difficult to isolate the metabolic components of physiological processes and study how they change across body sizes. Fortunately, social insect colonies also exhibit hypometric metabolic scaling. Larger colonies have lower mass-specific metabolic rates, whether measured across species or within species. Within the harvester ant, Pogonomyrmex californicus, colonial metabolic rate scales hypometrically, and focus shifts from brood care early in ontogeny to foraging and waste management. Some studies have also found a higher fraction of inactive ants in larger colonies. We hypothesized that these changes in task allocation contribute to hypometric metabolic scaling. Using mask respirometry, we measured the metabolic rates of ants performing brood care, maintenance tasks, foraging and while resting within functioning P. californicus colonies. We found that metabolic rates of ants rank brood care > maintenance = foraging > resting. This suggests that shifts in task allocation could play a role in the reduction of mass-specific metabolic rate of larger ant colonies, although we estimate that the effect this has on hypometric scaling is negligible.  
+
+## Repository Description
+
+This repository contains two datasets (saved as csv files) and a single script in R which analyzes these datasets and produces visualizations. The file CarbonDioxideofTasks.csv has the average carbon dioxide traces of different tasks. The column colony ID gives the colony, date column gives the date, time gives time of day in military time, bag baseline gives the average amount of CO2 (in parts per million) of the bag where the mask is held away from the ants, ant ID gives the color combination that signifies an ant, baseline type gives the substrate upon which the task was performed, baseline seeds.brood gives the co2 trace of the background, mean CO2 gives the average CO2 measurement of a task, task.manuel gives the name of the task (m = maintenance, b = broodcare, r = resting, f = foraging), and corrected CO2 is the mean co2 minus the background baseline. 
+
+4PeriodCO2Trace.csv just gives the CO2 trace of a single observation during the observation period. 
+
+metabolismTasks.R inputs these two datasets to analyze the data and produce graphs 
